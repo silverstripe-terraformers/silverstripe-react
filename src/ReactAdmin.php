@@ -31,7 +31,7 @@ abstract class ReactAdmin extends LeftAndMain implements ReactComponent
         '' => 'index',
     ];
 
-    public function forTemplate()
+    public function forTemplate(): string
     {
         $return = $this->renderWith($this->getTemplates());
         return $return;
@@ -86,7 +86,7 @@ abstract class ReactAdmin extends LeftAndMain implements ReactComponent
         return parent::index($request);
     }
 
-    public function getClientConfig()
+    public function getClientConfig(): array
     {
         $baseLink = $this->Link();
 
