@@ -75,7 +75,7 @@ abstract class ReactFormField extends FormField implements ReactComponent
      */
     public function InputValue(): string
     {
-        return $this->Value();
+        return $this->getValue();
     }
 
 
